@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,32 +20,21 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8236544565113650" crossorigin="anonymous"></script>
 <style>
-    /* Override the problematic CSS from style.css */
-    .header {
-        background: none !important;
-        min-height: auto !important;
-        padding: 20px 0 !important;
-    }
-    
-    .header-top {
-        padding-top: 0 !important;
-    }
-    
     /* Clean styling that won't conflict */
     .hero-section {
         background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
         color: white;
-        padding: 40px 0 !important; /* Reduced from 80px */
+        padding: 60px 0;
         text-align: center;
         margin-bottom: 30px;
     }
     .hero-title {
-        font-size: 32px !important; /* Reduced from 42px */
-        margin-bottom: 10px;
+        font-size: 36px;
+        margin-bottom: 15px;
         font-weight: bold;
     }
     .hero-subtitle {
-        font-size: 18px !important; /* Reduced from 22px */
+        font-size: 20px;
         margin-bottom: 15px;
         opacity: 0.9;
     }
@@ -52,11 +42,11 @@
         display: inline-block;
         background: #a6ce39;
         color: white;
-        padding: 6px 12px;
+        padding: 8px 15px;
         border-radius: 4px;
         text-decoration: none;
-        margin: 10px 0;
-        font-size: 14px;
+        margin: 15px 0;
+        font-size: 16px;
     }
     .orcid-link:hover {
         background: #8bb82e;
@@ -73,126 +63,119 @@
         background: rgba(255,255,255,0.1);
         padding: 6px 12px;
         border-radius: 20px;
-        font-size: 12px;
+        font-size: 13px;
         border: 1px solid rgba(255,255,255,0.2);
     }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin: 0 auto 20px;
+        display: block;
+        object-fit: cover;
+    }
+    
+    /* Section styling */
+    .content-section {
+        padding: 40px 0;
+    }
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+        color: #2c3e50;
+    }
+    
+    /* Fixed header */
+    .header {
+        background: #2c3e50 !important;
+        min-height: auto !important;
+        padding: 15px 0 !important;
+    }
+    
+    /* Consistent spacing */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Publication items */
     .publication-item {
         background: #f8f9fa;
-        padding: 12px;
-        margin-bottom: 12px;
+        padding: 15px;
+        margin-bottom: 15px;
         border-radius: 5px;
         border-left: 4px solid #3498db;
     }
+    
+    /* Project items */
     .project-item {
         background: #fff;
-        padding: 15px;
-        margin-bottom: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         border-top: 4px solid #a6ce39;
     }
+    
+    /* Skill tags */
+    .skill-tag {
+        display: inline-block;
+        background: #eef5ff;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 13px;
+        color: #2c3e50;
+        border: 1px solid #d1e3ff;
+        margin: 4px;
+    }
+    
+    /* Quick stats */
     .quick-stats {
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         background: white;
-        padding: 15px;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        margin: 20px 0;
+        margin: 30px 0;
     }
     .stat-item {
         text-align: center;
-        padding: 10px;
+        padding: 15px;
     }
     .stat-number {
-        font-size: 22px; /* Reduced from 28px */
+        font-size: 24px;
         font-weight: bold;
         color: #3498db;
         display: block;
     }
     .stat-label {
-        font-size: 12px; /* Reduced from 14px */
+        font-size: 14px;
         color: #7f8c8d;
     }
-    .profile-img {
-        width: 120px !important; /* Reduced from 180px */
-        height: 120px !important; /* Reduced from 180px */
-        border-radius: 50%;
-        border: 2px solid white;
-        margin: 0 auto 15px;
-        display: block;
-        object-fit: cover;
-    }
-    .code-badge {
-        display: inline-block;
-        background: #333;
+    
+    /* Buttons */
+    button {
+        background: #3498db;
         color: white;
-        padding: 4px 8px;
+        border: none;
+        padding: 10px 20px;
         border-radius: 4px;
-        font-family: monospace;
-        font-size: 12px;
-        margin: 3px;
+        cursor: pointer;
+        font-size: 14px;
+        margin-top: 10px;
     }
-    .feature-list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6px;
-        margin: 10px 0;
-    }
-    .feature-tag {
-        background: #e8f5e8;
-        padding: 4px 10px;
-        border-radius: 15px;
-        font-size: 11px;
-        color: #2d5015;
-        border: 1px solid #c8e6c9;
-    }
-    
-    /* Fix for services-section spacing */
-    .services-section {
-        padding: 20px 0 !important; /* Reduced from 3em 0 */
-    }
-    
-    /* Fix for footer */
-    .footer-section {
-        padding: 20px 0px !important; /* Reduced from 40px 0px */
-    }
-    
-    /* Additional fixes for better mobile display */
-    @media (max-width: 768px) {
-        .hero-section {
-            padding: 30px 0 !important;
-        }
-        .hero-title {
-            font-size: 24px !important;
-        }
-        .hero-subtitle {
-            font-size: 16px !important;
-        }
-        .profile-img {
-            width: 100px !important;
-            height: 100px !important;
-        }
-        .quick-stats {
-            padding: 10px;
-        }
-        .stat-item {
-            padding: 8px;
-        }
-        .stat-number {
-            font-size: 18px;
-        }
-        .stat-label {
-            font-size: 10px;
-        }
+    button:hover {
+        background: #2980b9;
     }
 </style>
 </head>
 <body>
 <hr>
-<!-- Fixed Header -->
-<div class="header" id="head" style="background: #2c3e50 !important;">	
+<div class="header" id="head">	
 	<div class="container"> 
 		<div class="top-menu">
 			<span class="menu"> </span>
@@ -221,7 +204,7 @@
 		<img src="images/pic-9.jpg" alt="Guta Tesema Tufa" class="profile-img">
 		<h1 class="hero-title">Guta Tesema Tufa</h1>
 		<h2 class="hero-subtitle">Researcher | University of Messina, Italy</h2>
-		<p style="max-width: 800px; margin: 0 auto 15px; font-size: 16px; line-height: 1.5;">
+		<p style="max-width: 800px; margin: 0 auto 20px; font-size: 16px; line-height: 1.6;">
 			Specializing in Machine Learning and Deep Learning models for upper limb movement control using surface electromyographic (sEMG) signals and Natural Language Processing for Afaan Oromoo
 		</p>
 		<a href="https://orcid.org/0000-0003-1071-2557" target="_blank" class="orcid-link">
@@ -266,193 +249,184 @@
 </div>
 
 <!-- Biography Section -->
-<div class="services-section" id="about">
+<div class="content-section" id="about">
 	<div class="container"> 
-		<div class="services-header">
-			<h3>Professional Biography</h3>
-			<p style="text-align: justify; line-height: 1.6; margin-bottom: 20px; font-size: 15px;">
-				I am a dedicated researcher at the University of Messina, Italy, specializing in the development of advanced machine learning models for controlling upper limb movements through surface electromyographic signals. I hold a Master of Science in Computer Engineering from Addis Ababa University, and my undergraduate degree in Electrical and Computer Engineering, with a focus on Computer Engineering, was earned at Arba Minch University in Ethiopia.
-				Currently, I am working on a cutting-edge research grant titled "Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals." This project blends my deep passion for both machine learning and biomedical engineering to create solutions with real-world implications for rehabilitation.
-			</p>
-			
-			<h3>Current Position</h3>
-			<p style="margin-bottom: 10px;"><strong>Researcher</strong> – University of Messina, Italy (Feb 2025 – Present)</p>
-			<p style="margin-bottom: 20px;">Building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
-			
-			<h3>Academic Experience</h3>
-			<div style="margin-bottom: 20px;">
-				<p><strong>Lecturer</strong>, Computer Science and Engineering – Adama Science and Technology University (Nov 2023 – Feb 2025)</p>
-				<p><strong>Lecturer</strong>, Electrical and Computer Engineering – Arba Minch University (Aug 2017 – Nov 2023)</p>
-			</div>
-			
-			<h3>Education</h3>
-			<div style="margin-bottom: 20px;">
-				<p><strong>MSc in Computer Engineering</strong> – Addis Ababa University (2019 – 2022)</p>
-				<p><strong>BSc in Electrical and Computer Engineering</strong> – Arba Minch University (2013 – 2017)</p>
-			</div>
-		</div>
+		<h2 class="section-title">Professional Biography</h2>
+		<p style="text-align: justify; line-height: 1.6; margin-bottom: 20px;">
+			I am a dedicated researcher at the University of Messina, Italy, specializing in the development of advanced machine learning models for controlling upper limb movements through surface electromyographic signals. I hold a Master of Science in Computer Engineering from Addis Ababa University, and my undergraduate degree in Electrical and Computer Engineering, with a focus on Computer Engineering, was earned at Arba Minch University in Ethiopia.
+		</p>
+		<p style="text-align: justify; line-height: 1.6; margin-bottom: 30px;">
+			Currently, I am working on a cutting-edge research grant titled "Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals." This project blends my deep passion for both machine learning and biomedical engineering to create solutions with real-world implications for rehabilitation.
+		</p>
+		
+		<h3>Current Position</h3>
+		<p><strong>Researcher</strong> – University of Messina, Italy (Feb 2025 – Present)</p>
+		<p>Building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
+		
+		<h3>Academic Experience</h3>
+		<ul style="margin-bottom: 20px;">
+			<li><strong>Lecturer</strong>, Computer Science and Engineering – Adama Science and Technology University (Nov 2023 – Feb 2025)</li>
+			<li><strong>Lecturer</strong>, Electrical and Computer Engineering – Arba Minch University (Aug 2017 – Nov 2023)</li>
+		</ul>
+		
+		<h3>Education</h3>
+		<ul style="margin-bottom: 20px;">
+			<li><strong>MSc in Computer Engineering</strong> – Addis Ababa University (2019 – 2022)</li>
+			<li><strong>BSc in Electrical and Computer Engineering</strong> – Arba Minch University (2013 – 2017)</li>
+		</ul>
 	</div>
 </div>
 
 <!-- Projects & Software Section -->
-<div class="services-section" id="projects" style="background: #f9f9f9;">
+<div class="content-section" id="projects" style="background: #f9f9f9;">
 	<div class="container"> 
-		<div class="services-header">
-			<h3>Projects & Software Development</h3>
+		<h2 class="section-title">Projects & Software Development</h2>
+		
+		<div class="project-item">
+			<h3>Qubee-nlp: Afaan Oromoo Natural Language Processing Toolkit</h3>
+			<p>An open-source Natural Language Processing toolkit for Afaan Oromoo, providing comprehensive tools for processing, analyzing, and understanding Afaan Oromoo text using the Qubee script.</p>
 			
-			<div class="project-item">
-				<h4>Qubee-nlp: Afaan Oromoo Natural Language Processing Toolkit</h4>
-				<p style="font-size: 14px; line-height: 1.5;">An open-source Natural Language Processing toolkit for Afaan Oromoo, providing comprehensive tools for processing, analyzing, and understanding Afaan Oromoo text using the Qubee script.</p>
-				
-				<div style="margin: 10px 0;">
-					<span class="code-badge">pip install qubee-nlp</span>
-					<span class="code-badge">GitHub: Qubee-nlp</span>
-					<span class="code-badge">Documentation: qubee-nlp.readthedocs.io</span>
-				</div>
-				
-				<h5 style="margin: 10px 0 5px 0;">Core Features:</h5>
-				<div class="feature-list">
-					<span class="feature-tag">Text Validation</span>
-					<span class="feature-tag">Tokenization</span>
-					<span class="feature-tag">Normalization</span>
-					<span class="feature-tag">Stemming</span>
-					<span class="feature-tag">POS Tagging</span>
-					<span class="feature-tag">Stopword Removal</span>
-					<span class="feature-tag">Syllabification</span>
-					<span class="feature-tag">Corpus</span>
-					<span class="feature-tag">Command Line Interface</span>
-				</div>
-				
-				<p style="font-size: 14px; margin: 10px 0;"><strong>Purpose:</strong> Designed for researchers, developers, and institutions working on Afaan Oromoo language technologies. This toolkit addresses the need for specialized NLP tools for low-resource languages and supports ongoing research in hate speech detection and sentiment analysis for Afaan Oromoo and related languages.</p>
-				
-				<p style="font-size: 14px; margin: 10px 0;"><strong>Documentation:</strong> Complete documentation is available at <a href="https://qubee-nlp.readthedocs.io" target="_blank">https://qubee-nlp.readthedocs.io</a></p>
-				
-				<div style="margin-top: 15px;">
-					<a href="https://qubee-nlp.readthedocs.io" target="_blank">
-						<button style="padding: 8px 15px; font-size: 14px;">View Full Documentation</button>
-					</a>
-				</div>
+			<p><strong>Installation:</strong> <code>pip install qubee-nlp</code></p>
+			<p><strong>Documentation:</strong> <a href="https://qubee-nlp.readthedocs.io" target="_blank">https://qubee-nlp.readthedocs.io</a></p>
+			
+			<h4>Core Features:</h4>
+			<div>
+				<span class="skill-tag">Text Validation</span>
+				<span class="skill-tag">Tokenization</span>
+				<span class="skill-tag">Normalization</span>
+				<span class="skill-tag">Stemming</span>
+				<span class="skill-tag">POS Tagging</span>
+				<span class="skill-tag">Stopword Removal</span>
+				<span class="skill-tag">Syllabification</span>
+				<span class="skill-tag">Corpus Processing</span>
+				<span class="skill-tag">Command Line Interface</span>
 			</div>
 			
-			<div class="project-item">
-				<h4>Afaan Oromoo Hateful Memes Detection on Social Media</h4>
-				<p style="font-size: 14px; line-height: 1.5;">This ongoing research project focuses on developing deep learning models to detect hateful content in Afaan Oromoo memes on social media platforms. The project utilizes NLP techniques for text extraction and computer vision for image analysis.</p>
-				<p style="font-size: 14px;"><strong>Technologies:</strong> Python, Deep Learning, Computer Vision, Natural Language Processing, Qubee-nlp toolkit</p>
-				<a href="abs.html"><button style="padding: 8px 15px; font-size: 14px; margin-top: 10px;">Click here to Read Abstract</button></a>
-			</div>
+			<p><strong>Purpose:</strong> Designed for researchers, developers, and institutions working on Afaan Oromoo language technologies. This toolkit addresses the need for specialized NLP tools for low-resource languages.</p>
 			
-			<div class="project-item">
-				<h4>Development of Machine Learning Models for Controlling Upper Limb Movements</h4>
-				<p style="font-size: 14px; line-height: 1.5;">University of Messina Research Grant focused on building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
-				<p style="font-size: 14px;"><strong>Applications:</strong> Rehabilitation robotics, assistive technologies, human-machine interaction systems</p>
-			</div>
+			<a href="https://qubee-nlp.readthedocs.io" target="_blank">
+				<button>View Full Documentation</button>
+			</a>
+		</div>
+		
+		<div class="project-item">
+			<h3>Afaan Oromoo Hateful Memes Detection on Social Media</h3>
+			<p>This ongoing research project focuses on developing deep learning models to detect hateful content in Afaan Oromoo memes on social media platforms. The project utilizes NLP techniques for text extraction and computer vision for image analysis.</p>
+			<p><strong>Technologies:</strong> Python, Deep Learning, Computer Vision, Natural Language Processing, Qubee-nlp toolkit</p>
+			<a href="abs.html"><button>Click here to Read Abstract</button></a>
+		</div>
+		
+		<div class="project-item">
+			<h3>Development of Machine Learning Models for Controlling Upper Limb Movements</h3>
+			<p>University of Messina Research Grant focused on building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
+			<p><strong>Applications:</strong> Rehabilitation robotics, assistive technologies, human-machine interaction systems</p>
 		</div>
 	</div>
 </div>
 
 <!-- Research Section -->
-<div class="services-section" id="research">
+<div class="content-section" id="research">
 	<div class="container"> 
-		<div class="services-header">
-			<h3>Research & Publications</h3>
-			
-			<div style="background: #e8f4fc; padding: 15px; border-radius: 5px; margin-bottom: 20px;">
-				<h4 style="margin-top: 0;">Current Research Focus</h4>
-				<p style="margin-bottom: 5px;"><strong>"Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals"</strong></p>
-				<p style="margin: 0;">University of Messina Research Grant</p>
-			</div>
-			
-			<h4>Publications Under Review</h4>
-			
-			<div class="publication-item">
-				<p><strong>Examine the Impact of Normalizing and Using Amharic Informal Opinionated Features in Sentiment Analysis</strong></p>
-				<p style="font-size: 14px;"><em>Journal of Engineering</em> | Submitted: 13 July 2025 | Status: Pending Approval</p>
-			</div>
-			
-			<div class="publication-item">
-				<p><strong>Amharic Hateful Memes Detection on Social Media Using Deep Learning</strong></p>
-				<p style="font-size: 14px;"><em>Book Chapter: Artificial Neural Networks - Recent Advances and Application</em> | Publisher: IntechOpen | Submitted: 3.07.2025</p>
-			</div>
-			
-			<div class="publication-item">
-				<p><strong>Optimizing FPGA Resources with Convolutional Neural Network Strategies</strong></p>
-				<p style="font-size: 14px;"><em>International Journal of Information Technology</em> | Submitted: 03 March 2025 | Status: Under Review</p>
-			</div>
-			
-			<h4>Published Work</h4>
-			
-			<div class="publication-item">
-				<p><strong>Sputum smears quality inspection using an ensemble feature extraction approach</strong></p>
-				<p style="font-size: 14px;">Kiflie A, Tesema Tufa G and Salau AO (2023)</p>
-				<p style="font-size: 14px;"><em>Frontiers in Public Health</em></p>
-				<a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.1032467/full">
-					<button style="padding: 8px 15px; font-size: 14px;">Click here to Read a paper</button>
-				</a>
-			</div>
-			
-			<div class="publication-item">
-				<p><strong>Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays</strong></p>
-				<p style="font-size: 14px;">Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan (2022)</p>
-				<p style="font-size: 14px;"><em>Computational Intelligence and Neuroscience</em></p>
-				<a href="https://onlinelibrary.wiley.com/doi/full/10.1155/2022/8387364">
-					<button style="padding: 8px 15px; font-size: 14px;">Click here to Read a paper</button>
-				</a>
-			</div>
-			
-			<div class="publication-item">
-				<p><strong>Design and implementation of heart beat monitoring using PIC microcontroller</strong></p>
-				<p style="font-size: 14px;">Biniyam, A., Tesema, A.G., Mohammed, A.A., Ramaiah, N.S., Dilla, A.E. (2017)</p>
-				<p style="font-size: 14px;"><em>IEEE SmartTechCon Conference Proceedings</em></p>
-				<a href="https://ieeexplore.ieee.org/abstract/document/8358479">
-					<button style="padding: 8px 15px; font-size: 14px;">Click here to Read a paper</button>
-				</a>
-			</div>
-			
-			<h4>Technical Skills</h4>
-			<div style="text-align: center; margin: 15px 0;">
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Python</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">C++</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Machine Learning</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Deep Learning</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Data Science</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Natural Language Processing</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">FPGA Programming</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 5px 10px; border-radius: 15px; font-size: 12px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 4px;">Biomedical Signals</span>
-			</div>
+		<h2 class="section-title">Research & Publications</h2>
+		
+		<div style="background: #e8f4fc; padding: 20px; border-radius: 5px; margin-bottom: 30px;">
+			<h3>Current Research Focus</h3>
+			<p><strong>"Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals"</strong></p>
+			<p>University of Messina Research Grant</p>
+		</div>
+		
+		<h3>Publications Under Review</h3>
+		
+		<div class="publication-item">
+			<p><strong>Examine the Impact of Normalizing and Using Amharic Informal Opinionated Features in Sentiment Analysis</strong></p>
+			<p><em>Journal of Engineering</em> | Submitted: 13 July 2025 | Status: Pending Approval</p>
+		</div>
+		
+		<div class="publication-item">
+			<p><strong>Amharic Hateful Memes Detection on Social Media Using Deep Learning</strong></p>
+			<p><em>Book Chapter: Artificial Neural Networks - Recent Advances and Application</em> | Publisher: IntechOpen | Submitted: 3.07.2025</p>
+		</div>
+		
+		<div class="publication-item">
+			<p><strong>Optimizing FPGA Resources with Convolutional Neural Network Strategies</strong></p>
+			<p><em>International Journal of Information Technology</em> | Submitted: 03 March 2025 | Status: Under Review</p>
+		</div>
+		
+		<h3>Published Work</h3>
+		
+		<div class="publication-item">
+			<p><strong>Sputum smears quality inspection using an ensemble feature extraction approach</strong></p>
+			<p>Kiflie A, Tesema Tufa G and Salau AO (2023)</p>
+			<p><em>Frontiers in Public Health</em></p>
+			<a href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.1032467/full">
+				<button>Click here to Read a paper</button>
+			</a>
+		</div>
+		
+		<div class="publication-item">
+			<p><strong>Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays</strong></p>
+			<p>Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan (2022)</p>
+			<p><em>Computational Intelligence and Neuroscience</em></p>
+			<a href="https://onlinelibrary.wiley.com/doi/full/10.1155/2022/8387364">
+				<button>Click here to Read a paper</button>
+			</a>
+		</div>
+		
+		<div class="publication-item">
+			<p><strong>Design and implementation of heart beat monitoring using PIC microcontroller</strong></p>
+			<p>Biniyam, A., Tesema, A.G., Mohammed, A.A., Ramaiah, N.S., Dilla, A.E. (2017)</p>
+			<p><em>IEEE SmartTechCon Conference Proceedings</em></p>
+			<a href="https://ieeexplore.ieee.org/abstract/document/8358479">
+				<button>Click here to Read a paper</button>
+			</a>
+		</div>
+		
+		<h3>Technical Skills</h3>
+		<div style="text-align: center; margin: 20px 0;">
+			<span class="skill-tag">Python</span>
+			<span class="skill-tag">C++</span>
+			<span class="skill-tag">Machine Learning</span>
+			<span class="skill-tag">Deep Learning</span>
+			<span class="skill-tag">Data Science</span>
+			<span class="skill-tag">Natural Language Processing</span>
+			<span class="skill-tag">FPGA Programming</span>
+			<span class="skill-tag">Biomedical Signals</span>
 		</div>
 	</div>
 </div>
 
-<!-- Contact Section -->
-<div class="footer-section" id="contact">
+<!-- Contact Section - Using your clean footer structure -->
+<div class="footer-section" id="contact" style="background: #2c3e50; color: white; padding: 40px 0;">
 	<div class="container"> 
-		<div class="contact-header">
-			<h3>Contact Information</h3>
-			<p style="text-align: center; margin: 15px 0; font-size: 14px;">Available for research collaborations, academic discussions, and professional opportunities</p>
-			<div style="text-align: center; margin: 15px 0;">
-				<p style="margin: 8px 0; font-size: 14px;"><strong>Email:</strong> <a href="mailto:guttatesema@gmail.com">guttatesema@gmail.com</a></p>
-				<p style="margin: 8px 0; font-size: 14px;"><strong>Phone:</strong> (+39) 3398577203</p>
-				<p style="margin: 8px 0; font-size: 14px;"><strong>Location:</strong> Via Pietro Castelli, 49, 98122, Messina ME, Italy</p>
-				<p style="margin: 8px 0; font-size: 14px;"><strong>Institutional:</strong> <a href="mailto:guta.tesema@astu.edu.et">guta.tesema@astu.edu.et</a></p>
+		<div style="text-align: center; margin-bottom: 30px;">
+			<h3 style="color: #ef664d; margin-bottom: 20px;">Contact Information</h3>
+			<p style="margin-bottom: 20px; font-size: 16px;">Available for research collaborations, academic discussions, and professional opportunities</p>
+			
+			<div style="margin-bottom: 20px;">
+				<p><strong>Email:</strong> <a href="mailto:guttatesema@gmail.com" style="color: #3498db;">guttatesema@gmail.com</a></p>
+				<p><strong>Phone:</strong> (+39) 3398577203</p>
+				<p><strong>Location:</strong> Via Pietro Castelli, 49, 98122, Messina ME, Italy</p>
+				<p><strong>Institutional:</strong> <a href="mailto:guta.tesema@astu.edu.et" style="color: #3498db;">guta.tesema@astu.edu.et</a></p>
 			</div>
 		</div>
-		<div class="social-icon">
-			<a href="https://www.facebook.com/profile.php?id=100067683007178" title="Facebook"><i class="icon2"></i></a>
-			<a href="mailto:guttatesema@gmail.com" title="Email"><i class="icon3"></i></a>
-			<a href="https://www.youtube.com/@guutaatesema" title="YouTube"><i class="icon4"></i></a>
-			<a href="https://orcid.org/0000-0003-1071-2557" target="_blank" title="ORCID Profile"><i class="icon6"></i></a>
-			<a href="https://www.linkedin.com/in/guta-tesema-163a66177/" target="_blank" title="LinkedIn"><i class="icon7"></i></a>
+		
+		<div class="social-icon" style="text-align: center; margin: 20px 0;">
+			<a href="https://www.facebook.com/profile.php?id=100067683007178" title="Facebook" style="margin: 0 10px;"><i class="icon2"></i></a>
+			<a href="mailto:guttatesema@gmail.com" title="Email" style="margin: 0 10px;"><i class="icon3"></i></a>
+			<a href="https://www.youtube.com/@guutaatesema" title="YouTube" style="margin: 0 10px;"><i class="icon4"></i></a>
+			<a href="https://orcid.org/0000-0003-1071-2557" target="_blank" title="ORCID Profile" style="margin: 0 10px;"><i class="icon6"></i></a>
+			<a href="https://www.linkedin.com/in/guta-tesema-163a66177/" target="_blank" title="LinkedIn" style="margin: 0 10px;"><i class="icon7"></i></a>
 		</div>
 		
-		<div class="footer-bottom">
-			<p style="font-size: 14px;">
+		<div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+			<p style="margin-bottom: 10px;">
 				&copy;
 				<script>document.write(new Date().getFullYear())</script> Guta Tesema Tufa. All rights reserved.
 			</p>
-			<p style="margin-top: 8px; font-size: 13px; color: #666;">
+			<p style="font-size: 14px; color: #aaa; margin-bottom: 5px;">
 				Researcher | University of Messina | Passport: EP7787234
 			</p>
-			<p style="margin-top: 5px; font-size: 11px; color: #888;">
+			<p style="font-size: 12px; color: #888;">
 				ORCID iD: 0000-0003-1071-2557 | Last Updated: <script>document.write(new Date().toLocaleDateString())</script>
 			</p>
 		</div>
