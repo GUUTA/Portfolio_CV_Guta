@@ -1,4 +1,4 @@
-:<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,14 +114,57 @@
         border-left: 4px solid #3498db;
     }
     
-    /* Project items */
+    /* Project items - Updated with enhanced styling */
     .project-item {
         background: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        padding: 25px;
+        margin-bottom: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         border-top: 4px solid #a6ce39;
+        transition: all 0.3s ease;
+    }
+    
+    .project-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    
+    .project-item h3 {
+        color: #2c3e50;
+        margin-bottom: 15px;
+        font-size: 22px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 10px;
+    }
+    
+    .project-item h4 {
+        color: #3498db;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+    
+    .project-item p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+    
+    /* Color-coded project items for biography section */
+    .bio-card {
+        border-top-color: #3498db !important; /* Blue for biography */
+    }
+    
+    .current-position-card {
+        border-top-color: #2ecc71 !important; /* Green for current position */
+    }
+    
+    .academic-experience-card {
+        border-top-color: #e74c3c !important; /* Red for academic experience */
+    }
+    
+    .education-card {
+        border-top-color: #9b59b6 !important; /* Purple for education */
     }
     
     /* Skill tags */
@@ -175,6 +218,27 @@
     }
     button:hover {
         background: #2980b9;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .project-item {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .project-item h3 {
+            font-size: 20px;
+        }
+        
+        .skill-tag {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+        }
     }
 </style>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -259,28 +323,100 @@
 <div class="content-section" id="about">
 	<div class="container"> 
 		<h2 class="section-title">Professional Biography</h2>
-		<p style="text-align: justify; line-height: 1.6; margin-bottom: 20px;">
-			I am a dedicated researcher at the University of Messina, Italy, specializing in the development of advanced machine learning models for controlling upper limb movements through surface electromyographic signals. I hold a Master of Science in Computer Engineering from Addis Ababa University, and my undergraduate degree in Electrical and Computer Engineering, with a focus on Computer Engineering, was earned at Arba Minch University in Ethiopia.
-		</p>
-		<p style="text-align: justify; line-height: 1.6; margin-bottom: 30px;">
-			Currently, I am working on a cutting-edge research grant titled "Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals." This project blends my deep passion for both machine learning and biomedical engineering to create solutions with real-world implications for rehabilitation.
-		</p>
 		
-		<h3>Current Position</h3>
-		<p><strong>Researcher</strong> – University of Messina, Italy (Feb 2025 – Present)</p>
-		<p>Building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
+		<!-- Biography Card -->
+		<div class="project-item bio-card">
+			<h3>About Me</h3>
+			<p style="text-align: justify; line-height: 1.6; margin-bottom: 15px;">
+				I am a dedicated researcher at the University of Messina, Italy, specializing in the development of advanced machine learning models for controlling upper limb movements through surface electromyographic signals.
+			</p>
+			<p style="text-align: justify; line-height: 1.6; margin-bottom: 15px;">
+				I hold a Master of Science in Computer Engineering from Addis Ababa University, and my undergraduate degree in Electrical and Computer Engineering, with a focus on Computer Engineering, was earned at Arba Minch University in Ethiopia.
+			</p>
+			<p style="text-align: justify; line-height: 1.6;">
+				Currently, I am working on a cutting-edge research grant titled <strong>"Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals."</strong> This project blends my deep passion for both machine learning and biomedical engineering to create solutions with real-world implications for rehabilitation.
+			</p>
+			
+			<h4>Research Interests:</h4>
+			<div>
+				<span class="skill-tag">Machine Learning</span>
+				<span class="skill-tag">Deep Learning</span>
+				<span class="skill-tag">Natural Language Processing</span>
+				<span class="skill-tag">Biomedical Engineering</span>
+				<span class="skill-tag">sEMG Signal Processing</span>
+				<span class="skill-tag">Afaan Oromoo NLP</span>
+				<span class="skill-tag">Rehabilitation Technology</span>
+				<span class="skill-tag">Human-Machine Interaction</span>
+			</div>
+		</div>
 		
-		<h3>Academic Experience</h3>
-		<ul style="margin-bottom: 20px;">
-			<li><strong>Lecturer</strong>, Computer Science and Engineering – Adama Science and Technology University (Nov 2023 – Feb 2025)</li>
-			<li><strong>Lecturer</strong>, Electrical and Computer Engineering – Arba Minch University (Aug 2017 – Nov 2023)</li>
-		</ul>
+		<!-- Current Position Card -->
+		<div class="project-item current-position-card">
+			<h3>Current Position</h3>
+			<p><strong>Researcher</strong> – University of Messina, Italy</p>
+			<p><strong>Duration:</strong> February 2025 – Present</p>
+			
+			<h4>Responsibilities & Focus:</h4>
+			<p>Building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
+			
+			<h4>Key Areas:</h4>
+			<div>
+				<span class="skill-tag">ML/DL Model Development</span>
+				<span class="skill-tag">Signal Processing</span>
+				<span class="skill-tag">Biomedical Applications</span>
+				<span class="skill-tag">Research Publication</span>
+			</div>
+		</div>
 		
-		<h3>Education</h3>
-		<ul style="margin-bottom: 20px;">
-			<li><strong>MSc in Computer Engineering</strong> – Addis Ababa University (2019 – 2022)</li>
-			<li><strong>BSc in Electrical and Computer Engineering</strong> – Arba Minch University (2013 – 2017)</li>
-		</ul>
+		<!-- Academic Experience Card -->
+		<div class="project-item academic-experience-card">
+			<h3>Academic Experience</h3>
+			
+			<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
+				<p><strong>Lecturer, Computer Science and Engineering</strong></p>
+				<p><strong>Institution:</strong> Adama Science and Technology University</p>
+				<p><strong>Duration:</strong> November 2023 – February 2025</p>
+			</div>
+			
+			<div style="padding-top: 15px;">
+				<p><strong>Lecturer, Electrical and Computer Engineering</strong></p>
+				<p><strong>Institution:</strong> Arba Minch University</p>
+				<p><strong>Duration:</strong> August 2017 – November 2023</p>
+			</div>
+			
+			<h4>Teaching & Research Areas:</h4>
+			<div>
+				<span class="skill-tag">Computer Science</span>
+				<span class="skill-tag">Engineering Education</span>
+				<span class="skill-tag">Academic Research</span>
+				<span class="skill-tag">Student Mentoring</span>
+			</div>
+		</div>
+		
+		<!-- Education Card -->
+		<div class="project-item education-card">
+			<h3>Education</h3>
+			
+			<div style="margin-bottom: 20px; padding-bottom: 15px; border-bottom: 1px solid #eee;">
+				<p><strong>Master of Science in Computer Engineering</strong></p>
+				<p><strong>Institution:</strong> Addis Ababa University</p>
+				<p><strong>Duration:</strong> 2019 – 2022</p>
+			</div>
+			
+			<div style="padding-top: 15px;">
+				<p><strong>Bachelor of Science in Electrical and Computer Engineering</strong></p>
+				<p><strong>Institution:</strong> Arba Minch University</p>
+				<p><strong>Duration:</strong> 2013 – 2017</p>
+			</div>
+			
+			<h4>Core Competencies:</h4>
+			<div>
+				<span class="skill-tag">Computer Engineering</span>
+				<span class="skill-tag">Electrical Engineering</span>
+				<span class="skill-tag">Research Methodology</span>
+				<span class="skill-tag">Technical Analysis</span>
+			</div>
+		</div>
 	</div>
 </div>
 
