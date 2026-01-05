@@ -2,7 +2,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Guta Tesema Tufa, AI Researcher, Deep Learning, Machine Learning, Biomedical Engineering, University of Messina, Academic Profile" />
+<meta name="keywords" content="Guta Tesema Tufa, AI Researcher, Deep Learning, Machine Learning, Biomedical Engineering, University of Messina, Qubee-nlp, Afaan Oromoo NLP, Academic Profile" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
@@ -72,6 +72,14 @@
         border-radius: 5px;
         border-left: 4px solid #3498db;
     }
+    .project-item {
+        background: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border-top: 4px solid #a6ce39;
+    }
     .quick-stats {
         display: flex;
         justify-content: space-around;
@@ -104,6 +112,30 @@
         margin: 0 auto 20px;
         display: block;
         object-fit: cover;
+    }
+    .code-badge {
+        display: inline-block;
+        background: #333;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 14px;
+        margin: 5px;
+    }
+    .feature-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 15px 0;
+    }
+    .feature-tag {
+        background: #e8f5e8;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 13px;
+        color: #2d5015;
+        border: 1px solid #c8e6c9;
     }
 </style>
 </head>
@@ -139,7 +171,7 @@
 		<h1 class="hero-title">Guta Tesema Tufa</h1>
 		<h2 class="hero-subtitle">Researcher | University of Messina, Italy</h2>
 		<p style="max-width: 800px; margin: 0 auto 20px; font-size: 18px; line-height: 1.6;">
-			Specializing in Machine Learning and Deep Learning models for upper limb movement control using surface electromyographic (sEMG) signals
+			Specializing in Machine Learning and Deep Learning models for upper limb movement control using surface electromyographic (sEMG) signals and Natural Language Processing for Afaan Oromoo
 		</p>
 		<a href="https://orcid.org/0000-0003-1071-2557" target="_blank" class="orcid-link">
 			ORCID: 0000-0003-1071-2557
@@ -148,10 +180,10 @@
 		<div class="research-interests">
 			<span class="interest-tag">Machine Learning</span>
 			<span class="interest-tag">Deep Learning</span>
+			<span class="interest-tag">Natural Language Processing</span>
 			<span class="interest-tag">Biomedical Engineering</span>
 			<span class="interest-tag">sEMG Signal Processing</span>
-			<span class="interest-tag">Rehabilitation Robotics</span>
-			<span class="interest-tag">Human-Machine Interaction</span>
+			<span class="interest-tag">Afaan Oromoo NLP</span>
 		</div>
 	</div>
 </div>
@@ -211,6 +243,61 @@
 	</div>
 </div>
 
+<!-- Projects & Software Section -->
+<div class="services-section" id="projects" style="background: #f9f9f9;">
+	<div class="container"> 
+		<div class="services-header">
+			<h3>Projects & Software Development</h3>
+			
+			<div class="project-item">
+				<h4>Qubee-nlp: Afaan Oromoo Natural Language Processing Toolkit</h4>
+				<p>An open-source Natural Language Processing toolkit for Afaan Oromoo, providing comprehensive tools for processing, analyzing, and understanding Afaan Oromoo text using the Qubee script.</p>
+				
+				<div style="margin: 15px 0;">
+					<span class="code-badge">pip install qubee-nlp</span>
+					<span class="code-badge">GitHub: Qubee-nlp</span>
+					<span class="code-badge">Documentation: qubee-nlp.readthedocs.io</span>
+				</div>
+				
+				<h5>Core Features:</h5>
+				<div class="feature-list">
+					<span class="feature-tag">Text Validation</span>
+					<span class="feature-tag">Tokenization</span>
+					<span class="feature-tag">Normalization</span>
+					<span class="feature-tag">Stemming</span>
+					<span class="feature-tag">POS Tagging</span>
+					<span class="feature-tag">Stopword Removal</span>
+					<span class="feature-tag">Syllabification</span>
+					<span class="feature-tag">Command Line Interface</span>
+				</div>
+				
+				<p><strong>Purpose:</strong> Designed for researchers, developers, and institutions working on Afaan Oromoo language technologies. This toolkit addresses the need for specialized NLP tools for low-resource languages and supports ongoing research in hate speech detection and sentiment analysis for Afaan Oromoo and related languages.</p>
+				
+				<p><strong>Documentation:</strong> Complete documentation is available at <a href="https://qubee-nlp.readthedocs.io" target="_blank">https://qubee-nlp.readthedocs.io</a></p>
+				
+				<div style="margin-top: 20px;">
+					<a href="https://qubee-nlp.readthedocs.io" target="_blank">
+						<button>View Full Documentation</button>
+					</a>
+				</div>
+			</div>
+			
+			<div class="project-item">
+				<h4>Afaan Oromoo Hateful Memes Detection on Social Media</h4>
+				<p>This ongoing research project focuses on developing deep learning models to detect hateful content in Afaan Oromoo memes on social media platforms. The project utilizes NLP techniques for text extraction and computer vision for image analysis.</p>
+				<p><strong>Technologies:</strong> Python, Deep Learning, Computer Vision, Natural Language Processing, Qubee-nlp toolkit</p>
+				<a href="abs.html"><button>Click here to Read Abstract</button></a>
+			</div>
+			
+			<div class="project-item">
+				<h4>Development of Machine Learning Models for Controlling Upper Limb Movements</h4>
+				<p>University of Messina Research Grant focused on building machine learning and deep learning models for upper limb movement control using surface electromyographic (sEMG) signals.</p>
+				<p><strong>Applications:</strong> Rehabilitation robotics, assistive technologies, human-machine interaction systems</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- Research Section -->
 <div class="services-section" id="research">
 	<div class="container"> 
@@ -222,10 +309,6 @@
 				<p><strong>"Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals"</strong></p>
 				<p>University of Messina Research Grant</p>
 			</div>
-			
-			<h4>Ongoing Projects</h4>
-			<p><strong>Afaan Oromoo Hateful Memes Detection on Social Media</strong></p>
-			<a href="abs.html"><button>Click here to Read Abstract</button></a>
 			
 			<h4>Publications Under Review</h4>
 			
@@ -280,9 +363,9 @@
 				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">Machine Learning</span>
 				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">Deep Learning</span>
 				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">Data Science</span>
+				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">Natural Language Processing</span>
 				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">FPGA Programming</span>
 				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">Biomedical Signals</span>
-				<span style="display: inline-block; background: #eef5ff; padding: 6px 12px; border-radius: 15px; font-size: 13px; color: #2c3e50; border: 1px solid #d1e3ff; margin: 5px;">IoT</span>
 			</div>
 		</div>
 	</div>
