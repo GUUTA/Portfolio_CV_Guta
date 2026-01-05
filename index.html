@@ -175,11 +175,33 @@
                 <span class="stat-number">3</span>
                 <span class="stat-label">Universities</span>
             </div>
+			<div class="stat-item">
+            <span class="stat-number" id="profileViews">0</span>
+            <span class="stat-label">Profile Views</span>
+        </div>
             <div class="stat-item">
                 <span class="stat-number">2</span>
                 <span class="stat-label">Research Domains</span>
             </div>
         </div>
+<!-- Add this script before closing body tag -->
+<script>
+// Simple view counter
+(function() {
+    let views = parseInt(localStorage.getItem('gutaProfileViews') || '0');
+    views++;
+    localStorage.setItem('gutaProfileViews', views.toString());
+    
+    // Format number (e.g., 1,234)
+    const formattedViews = views.toLocaleString();
+    document.getElementById('profileViews').textContent = formattedViews;
+    
+    // Optional: Store date of first visit
+    if (!localStorage.getItem('firstVisitDate')) {
+        localStorage.setItem('firstVisitDate', new Date().toISOString());
+    }
+})();
+</script>
 <!-- About Section -->
 <div class="content">
     <div class="container">
@@ -315,5 +337,6 @@
 </div>
 </body>
 </html>
+
 
 
