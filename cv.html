@@ -1,300 +1,406 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!--<title>Above Free Responsive Template | Template Stock</title>-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Onepage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<meta name="keywords" content="Guta Tesema Tufa CV, Academic CV, Researcher CV, Computer Engineer CV, University Lecturer CV" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
-	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
- <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 		});
-	</script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8236544565113650"
-     crossorigin="anonymous"></script>
+	});
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8236544565113650" crossorigin="anonymous"></script>
+<style>
+    /* Minimal styling that won't conflict with existing CSS */
+    .cv-section {
+        background: #fff;
+        padding: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        border-left: 4px solid #3498db;
+    }
+    .cv-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    .cv-header h3 {
+        margin: 0;
+        color: #2c3e50;
+        font-size: 24px;
+    }
+    .cv-icon {
+        background: #3498db;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        font-size: 18px;
+    }
+    .cv-content {
+        padding-left: 55px;
+    }
+    .cv-item {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #eee;
+    }
+    .cv-item:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .cv-date {
+        color: #7f8c8d;
+        font-style: italic;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .cv-title {
+        color: #2c3e50;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .cv-description {
+        color: #555;
+        line-height: 1.6;
+    }
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+    }
+    .skill-tag {
+        background: #eef5ff;
+        padding: 6px 12px;
+        border-radius: 15px;
+        font-size: 13px;
+        color: #2c3e50;
+        border: 1px solid #d1e3ff;
+    }
+    .language-level {
+        display: inline-block;
+        padding: 2px 8px;
+        background: #27ae60;
+        color: white;
+        border-radius: 10px;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .publication-item {
+        padding: 10px;
+        margin-bottom: 10px;
+        background: #f9f9f9;
+        border-radius: 4px;
+        border-left: 3px solid #3498db;
+    }
+    .profile-badge {
+        display: inline-block;
+        background: #a6ce39;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 4px;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .profile-header {
+        background: #2c3e50;
+        color: white;
+        padding: 40px 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .profile-name {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .profile-title {
+        font-size: 18px;
+        opacity: 0.9;
+        margin-bottom: 20px;
+    }
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 3px solid white;
+        margin: 0 auto 20px;
+        display: block;
+        object-fit: cover;
+    }
+</style>
 </head>
 <body>
-	<hr>
+<hr>
 <div class="header" id="head">	
-      <div class="container"> 
-         <div class="header-top">
-      		 <div class="logo">
-				<!--a href="index.html"><img src="images/logo.png" alt=""/></a-->
-			 </div>
-		   <div class="top-menu">
-		   	<span class="menu"> </span>
-			<ul>
-			 	<nav class="cl-effect-5">
-				<li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
-				<!--li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li-->
-				<li><a class="active" href="about.html" class="scroll"><span data-hover="Research"><span>Research</span></a></li>
-				<li><a class="active" href="service.html" class="scroll"><span data-hover="Teaching">Teaching</span></a></li>
-				<!--<li><a class="active" href="cv.html" class="scroll"><span data-hover="CV">CV</span></a></li-->
-				</nav>
-			 </ul>
-			 </div>
-			 <!--script-nav
-		 <script>
-		 $("span.menu").click(function(){
-		 $(".top-menu ul").slideToggle("slow" , function(){
-		 });
-		 });
-		 </script>
-			<div class="clearfix"></div>
-		 </div>  
-		  <div class="index-banner">
-       	   <div class="wmuSlider example1">
-			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;"> 
-				   	<div class="banner-wrap">
-				   	       	<div class="banner_center">
-				   		 		<h1>hello world,</h1> 
-				   		 		<h2>i am <span>graphic & web designer</span></h2>
-				   		 		<h2>from morocco</h2>
-				   		 		</div>
-				   		 </div>
-					</article>
-				   <article style="position: relative; width: 100%; opacity: 1;"> 
-				   	   	<div class="banner-wrap">
-				   	      <div class="banner_center">
-				   		 		<h1>Content here,</h1> 
-				   		 		<h2>Lorem <span>graphic &  designer</span></h2>
-				   		 		<h2>Contrary</h2>
-				   		 		</div>
-				   		  </div>
-				   </article>
-				   <article style="position: absolute; width: 100%; opacity: 0;">
-				   	  	<div class="banner-wrap">
-				   	       <div class="banner_center">
-				   		 		<h1>Lorem Ipsum ,</h1> 
-				   		 		<h2>Contrary to <span>&  designer</span></h2>
-				   		 		<h2>reproduced below</h2>
-				   		 		</div>
-				   		 </div>
-					 </article>
-				 </div>
-				
+    <div class="container"> 
+        <div class="header-top">
+            <div class="logo">
+                <!--a href="index.html"><img src="images/logo.png" alt=""/></a-->
             </div>
-            -->
-            <script src="js/jquery.wmuSlider.js"></script> 
-			  <script>
-       			$('.example1').wmuSlider();         
-   		     </script> 	           	      
-      </div>
-	 </div>     
-	</div>
-	<div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>About Me</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-					<p>I'm lecturer at Adama Science and Technology University. I recieved  master of science in Computer Engineering from Addis Ababa University. I did my undergraduate degree at Arba Minch University in Electrical and Computer Engineering with concentration in Computer Engineering. </p> 
-					<p>I am currently an lecturer  at the School of Electrical Engineering and Computing where I continue to teach and do research in the field of Computer Science and Engineering. </p>
-			</div>
-     </div>
-     </div>
-     </div>
-    
-     
-			<div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>Education</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-					<ul>
-						<li>M.Sc. in Computer Engineering - Addis Ababa University, 2022. Thesis: "Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays" </li>
-						<li> Higher Diploma as a Professional Instructor of Higher Institution - Arba Minch University, 2022</li>
-						<li>B.Sc. in Electrical Engineering (Computer Stream), Arba Minch University, 2017.	</li>
-
-					</ul>
-			</div>
-			</div>
-     </div>
-     </div>
-
-     <div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>Awards and Certifications</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-				<ul>
-						<li> Nvidia Deep Learning Institute,2021- "Certificate of competency in Getting Started With Deepstream for Video Analytics on Jetson NANO" </li>
-						<li>  Nvidia Deep Learning Institute, 2021- Certificate of competency in Getting Started With AI on Jetson NANO</li>
-						<li>Arba Minch University, 2018 - Certificate in CCNA R & S Introduction to network 	</li>
-                   
-                <li> Arba Minch University - ACertificate in CCNA R&S Scaling network 2018 </li> 
-<li> Arba Minch University 2018 - Certificate in Routing and Switching Essentials </li>
-<li> Arba Minch University, 2018 - Certificate in CCNA R&S connective </li>
-<li> Arba Minch University, 2018 - Certificate of Advance Solar Training (AST) - AMiT/Arba Minch University (AMU), Ethiopia, ISAAC Institute|University of Applied science Southern Switzerland (SUPSI) Switzerland and University of Applied science and Art Lucern(HSLU) Switzerland </li>
-<li> Arba Minch University, 2017- Certificate in Instruction Skill Training  </li>
-					</ul>
-					
-			</div>
-			</div>
-     </div>
-     </div>
-
-     <div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>Skills</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-				<ul>
-						<li> I have good communication skills and the ability to work effectively in fast-paced and multi-
-tasking environments. </li>
-						<li>  I'm familiar with operating systems like Linux, and Windows.</li>
-						<li>I have computer knowledge and skills, as well as the ability to manage hardware and
-software, such as Microsoft Office, Excel, Word, and PowerPoint. 	</li>
-                   
-                <li> Programming languages: C, C++, Python, OpenCL, PHP, HTML-5, SQL, Latex, and Java</li> 
-<li> I like reading books, science papers, newspapers, and watching sports contests and scientific
-programs on TV. I also admire nature. </li>
-<li>Other skills I'm free of any habits or crimes. </li>
-
-					
-			</div>
-			</div>
-     </div>
-     </div>
-
-       <div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>Languages</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-				<ul>
-						<li> Afaan Oromo: Fluent
-</li>
-						<li>  English: Proficient
-</li>
-						<li>Amhric: Proficient 	</li>
-                   
-      </ul>
-					
-			</div>
-			</div>
-     </div>
-     </div>
-       <div class="content">
-		<div class="about-section" id="about" id="about">
-	<div class="container">
-		<div class="about-header">
-			<h3>Publications</h3>
-			<div class="about-imag">
-			<img src="images/pic-9.jpg" alt="Image" height="200" width="200"/>
-			</div>
-			<div class="about-text text-justify ">
-				<ol>
-					<li>Kiflie A, Tesema Tufa G and Salau AO (2023) “Sputum smears quality inspection using an
-ensemble
-feature
-extraction
-approach.”
-10.3389/fpubh.2022.1032467
-3
-Front.
-Public
-Health
-10:1032467.
-doi: 	</li>
-					<li> Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan. "Acceleration of
-Deep Neural Network Training Using Field Programmable Gate Arrays." Computational
-Intelligence and Neuroscience 2022 (2022).
-</li>
-						
-                   
-						<li> Biniyam, Ato, Ato Guta Tesema, Ato Akrem Mohammed, Narayana Swamy Ramaiah, and
-Ato Eyassu Dilla. "Design and implementation of heart beat monitoring using PIC
-microcontroller." In 2017 International Conference On Smart Technologies For Smart
-Nation (SmartTechCon), pp. 784-787. IEEE, 2017.
-</li>
-						
-      </ol>
-					
-			</div>
-			</div>
-     </div>
-     </div>
-     <div class="footer-section" id="contact" id="contact ">
-			<div class="container"> 
-			<div class="contact-header">
-				<h3> Contact Me</h3>
-				
-			</div>
-			<div class="social-icon">
-				<!--<a href="#"><i class="icon1"></i></a-->
-				<a href="https://www.facebook.com/profile.php?id=100067683007178"><i class="icon2"></i></a>
-				<a href="mailto:guutaatesema@gmail.com"><i class="icon3"></i></a>
-				<a href="https://www.youtube.com/@guutaatesema"><i class="icon4"></i></a>
-				
-				
-				<a href="#"><i class="icon6"></i></a>
-				<a href="#"><i class="icon7"></i></a>
-				<a href="#"><i class="icon8"></i></a>
-			
-			</div>
-			
-			<div class="footer-bottom">
-	
-       </script>
-					<p>
-  &copy;
-  <script>document.write(new Date().getFullYear())</script>, All rights reserved.
-</p>
-
-					</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-							*/
-							
-							$().UItoTop({ easingType: 'easeOutQuart' });
-							
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+            <div class="top-menu">
+                <span class="menu"> </span>
+                <ul>
+                    <nav class="cl-effect-5">
+                        <li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
+                        <li><a class="active" href="about.html" class="scroll"><span data-hover="Research">Research</span></a></li>
+                        <li><a class="active" href="service.html" class="scroll"><span data-hover="Teaching">Teaching</span></a></li>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $("span.menu").click(function(){
+                $(".top-menu ul").slideToggle("slow" , function(){
+                });
+            });
+        </script>
+    </div>
 </div>
 
-		</div>		
-	</div>
-	
-	
+<!-- Profile Header -->
+<div class="profile-header">
+    <div class="container">
+        <img src="images/pic-9.jpg" alt="Guta Tesema Tufa" class="profile-img">
+        <h1 class="profile-name">Guta Tesema Tufa</h1>
+        <h2 class="profile-title">Postmaster Researcher & Lecturer</h2>
+        <p>University of Messina | Adama Science and Technology University</p>
+        <a href="https://orcid.org/0000-0003-1071-2557" target="_blank" class="profile-badge">
+            ORCID: 0000-0003-1071-2557
+        </a>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <!-- About Section -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">👤</div>
+                <h3>Professional Summary</h3>
+            </div>
+            <div class="cv-content">
+                <p>I'm a lecturer at Adama Science and Technology University and a Postmaster Researcher at the University of Messina, Italy. I received my Master of Science in Computer Engineering from Addis Ababa University and my undergraduate degree at Arba Minch University in Electrical and Computer Engineering with concentration in Computer Engineering.</p>
+                <p>I am currently a lecturer at the School of Electrical Engineering and Computing where I continue to teach and do research in the field of Computer Science and Engineering.</p>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">🎓</div>
+                <h3>Education</h3>
+            </div>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <div class="cv-date">2022</div>
+                    <div class="cv-title">M.Sc. in Computer Engineering - Addis Ababa University</div>
+                    <div class="cv-description">Thesis: "Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays"</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2022</div>
+                    <div class="cv-title">Higher Diploma as a Professional Instructor of Higher Institution - Arba Minch University</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2017</div>
+                    <div class="cv-title">B.Sc. in Electrical Engineering (Computer Stream) - Arba Minch University</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Awards & Certifications -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">🏆</div>
+                <h3>Awards and Certifications</h3>
+            </div>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <div class="cv-date">2021</div>
+                    <div class="cv-title">Nvidia Deep Learning Institute</div>
+                    <div class="cv-description">Certificate of competency in "Getting Started With Deepstream for Video Analytics on Jetson NANO"</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2021</div>
+                    <div class="cv-title">Nvidia Deep Learning Institute</div>
+                    <div class="cv-description">Certificate of competency in "Getting Started With AI on Jetson NANO"</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2018</div>
+                    <div class="cv-title">Cisco Networking Academy</div>
+                    <div class="cv-description">
+                        Multiple certifications from Arba Minch University:
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>CCNA R&S Introduction to Network</li>
+                            <li>CCNA R&S Scaling Network</li>
+                            <li>Routing and Switching Essentials</li>
+                            <li>CCNA R&S Connectivity</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2018</div>
+                    <div class="cv-title">Advanced Solar Training (AST)</div>
+                    <div class="cv-description">AMiT/Arba Minch University (AMU), Ethiopia, ISAAC Institute | University of Applied Science Southern Switzerland (SUPSI) Switzerland and University of Applied Science and Art Lucern (HSLU) Switzerland</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">2017</div>
+                    <div class="cv-title">Instruction Skill Training</div>
+                    <div class="cv-description">Arba Minch University</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">💼</div>
+                <h3>Skills</h3>
+            </div>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <div class="cv-title">Technical Skills</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">OpenCL</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">HTML-5</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Operating Systems</div>
+                    <div class="cv-description">Linux, Windows</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Software Proficiency</div>
+                    <div class="cv-description">Microsoft Office Suite (Excel, Word, PowerPoint), Hardware & Software Management</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Professional Skills</div>
+                    <div class="cv-description">Excellent communication skills, ability to work effectively in fast-paced and multi-tasking environments</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Personal Interests</div>
+                    <div class="cv-description">Reading scientific papers and books, watching sports contests and scientific programs, admiring nature</div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Personal Attributes</div>
+                    <div class="cv-description">Free of any habits or crimes, professional work ethic</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">🌐</div>
+                <h3>Languages</h3>
+            </div>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <div class="cv-title">Afaan Oromo <span class="language-level">Fluent</span></div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">English <span class="language-level">Proficient</span></div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-title">Amharic <span class="language-level">Proficient</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Publications Section -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">📚</div>
+                <h3>Publications</h3>
+            </div>
+            <div class="cv-content">
+                <div class="publication-item">
+                    <div class="cv-title">1. Sputum smears quality inspection using an ensemble feature extraction approach</div>
+                    <div class="cv-description">
+                        Kiflie A, Tesema Tufa G and Salau AO (2023)<br>
+                        <em>Front. Public Health 10:1032467</em><br>
+                        DOI: 10.3389/fpubh.2022.1032467
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="cv-title">2. Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays</div>
+                    <div class="cv-description">
+                        Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan (2022)<br>
+                        <em>Computational Intelligence and Neuroscience 2022</em>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="cv-title">3. Design and implementation of heart beat monitoring using PIC microcontroller</div>
+                    <div class="cv-description">
+                        Biniyam, Ato, Ato Guta Tesema, Ato Akrem Mohammed, Narayana Swamy Ramaiah, and Ato Eyassu Dilla (2017)<br>
+                        <em>2017 International Conference On Smart Technologies For Smart Nation (SmartTechCon)</em>, pp. 784-787. IEEE, 2017.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-section" id="contact">
+    <div class="container"> 
+        <div class="contact-header">
+            <h3>Contact Me</h3>
+            <p style="text-align: center; margin: 20px 0;">Available for academic collaborations and research opportunities</p>
+        </div>
+        <div class="social-icon">
+            <a href="https://www.facebook.com/profile.php?id=100067683007178" title="Facebook"><i class="icon2"></i></a>
+            <a href="mailto:guutaatesema@gmail.com" title="Email"><i class="icon3"></i></a>
+            <a href="https://www.youtube.com/@guutaatesema" title="YouTube"><i class="icon4"></i></a>
+            <a href="https://orcid.org/0000-0003-1071-2557" target="_blank" title="ORCID Profile"><i class="icon6"></i></a>
+            <a href="#" title="LinkedIn"><i class="icon7"></i></a>
+            <a href="#" title="Google Scholar"><i class="icon8"></i></a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>
+                &copy;
+                <script>document.write(new Date().getFullYear())</script>, All rights reserved.
+            </p>
+            <p style="margin-top: 10px; font-size: 14px; color: #666;">
+                Guta Tesema Tufa • Academic Curriculum Vitae
+            </p>
+            <p style="margin-top: 5px; font-size: 12px; color: #888;">
+                ORCID: 0000-0003-1071-2557 | Last Updated: <script>document.write(new Date().toLocaleDateString())</script>
+            </p>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+</div>
 </body>
 </html>
