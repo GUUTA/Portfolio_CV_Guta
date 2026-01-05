@@ -25,6 +25,308 @@
     </script>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8236544565113650" crossorigin="anonymous"></script>
+    
+    <style>
+        /* Override problematic CSS from style.css */
+        .header {
+            background: #2c3e50 !important;
+            min-height: auto !important;
+            padding: 15px 0 !important;
+        }
+        
+        .header-top {
+            padding-top: 0 !important;
+        }
+        
+        /* Teaching Banner */
+        .teaching-banner {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .teaching-banner h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        
+        .teaching-banner h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+        
+        .affiliation-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 6px 15px;
+            border-radius: 20px;
+            margin: 10px 5px;
+            font-size: 14px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        /* Teaching Overview */
+        .teaching-overview {
+            background: #f8f9fa;
+            padding: 30px 0;
+            margin-bottom: 30px;
+        }
+        
+        .experience-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .experience-item {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .experience-item h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .duration {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        
+        /* Courses Section */
+        .services-section {
+            padding: 30px 0 !important;
+        }
+        
+        .services-header h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .services-grid {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+            height: 100%;
+            border-top: 4px solid #3498db;
+        }
+        
+        .course-icon {
+            text-align: center;
+            font-size: 36px;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+        
+        .university-label {
+            margin: 15px 0;
+        }
+        
+        .label {
+            display: inline-block;
+            background: #eef5ff;
+            color: #2c3e50;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .services-grid h4 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .services-grid ol, .services-grid ul {
+            padding-left: 20px;
+        }
+        
+        .services-grid li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .teaching-approach li {
+            margin-bottom: 15px;
+            padding-left: 5px;
+        }
+        
+        .specializations {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .specialization-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        
+        .specialization-tags span {
+            background: #e8f5e8;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 12px;
+            color: #2d5015;
+            border: 1px solid #c8e6c9;
+        }
+        
+        /* Contact Section */
+        .footer-section {
+            background: #2c3e50;
+            padding: 30px 0 !important;
+            color: white;
+        }
+        
+        .contact-header h3 {
+            color: #ef664d;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .contact-header p {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #ccc;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+        }
+        
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 8px;
+            min-width: 250px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-item i {
+            font-size: 24px;
+            color: #3498db;
+            margin-right: 15px;
+            margin-top: 5px;
+        }
+        
+        .contact-item h4 {
+            margin-bottom: 10px;
+            color: #ef664d;
+        }
+        
+        .contact-item p {
+            margin-bottom: 5px;
+        }
+        
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .social-icon {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .social-icon a {
+            margin: 0 10px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .footer-bottom p {
+            margin-bottom: 8px;
+        }
+        
+        .orcid-id a {
+            color: #a6ce39;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .experience-grid {
+                flex-direction: column;
+            }
+            
+            .experience-item {
+                width: 100%;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-item {
+                width: 100%;
+                max-width: 350px;
+            }
+            
+            .services-grid {
+                margin-bottom: 20px;
+            }
+            
+            .teaching-banner h1 {
+                font-size: 28px;
+            }
+            
+            .teaching-banner h2 {
+                font-size: 18px;
+            }
+        }
+        
+        /* Fix for column layout */
+        .col-md-4 {
+            float: left;
+            width: 33.33333333%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        
+        @media (max-width: 992px) {
+            .col-md-4 {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     <hr>
@@ -38,10 +340,9 @@
                     <span class="menu"></span>
                     <ul>
                         <nav class="cl-effect-5">
-                            <li><a class="active" href="index.html"><span data-hover="Home">home</span></a></li>
-                            <!--<li><a href="#about" class="scroll"><span data-hover="about">about</span></a></li>-->
+                            <li><a class="active" href="index.html"><span data-hover="Home">Home</span></a></li>
                             <li><a class="active" href="index.html#research" class="scroll"><span data-hover="Research">Research</span></a></li>
-                            <!-- Current page - Teaching -->
+                            <li><a class="active" href="service.html" style="color: #ef664d;"><span data-hover="Teaching">Teaching</span></a></li>
                             <li><a class="active" href="cv.html" class="scroll"><span data-hover="CV">CV</span></a></li>
                         </nav>
                     </ul>
@@ -70,6 +371,7 @@
                 <div class="university-affiliations">
                     <span class="affiliation-badge">Adama Science and Technology University</span>
                     <span class="affiliation-badge">Arba Minch University</span>
+                    <span class="affiliation-badge">University of Messina</span>
                 </div>
             </div>
         </div>
@@ -79,17 +381,19 @@
     <div class="teaching-overview" id="overview">
         <div class="container">
             <div class="overview-content">
-                <h3>Teaching Experience</h3>
+                <h3 style="text-align: center; color: #2c3e50; margin-bottom: 25px;">Teaching Experience</h3>
                 <div class="experience-grid">
                     <div class="experience-item">
                         <h4><i class="fas fa-university"></i> Adama Science and Technology University</h4>
-                        <p class="duration">November 2023 – September 2025</p>
-                        <p class="position">Lecturer, Department of Computer Science and Engineering</p>
+                        <p class="duration">November 2023 – February 2025</p>
+                        <p class="position"><strong>Lecturer, Department of Computer Science and Engineering</strong></p>
+                        <p style="margin-top: 10px;">Taught undergraduate courses in computer science with focus on practical applications and industry relevance.</p>
                     </div>
                     <div class="experience-item">
                         <h4><i class="fas fa-university"></i> Arba Minch University</h4>
-                        <p class="duration">August 2017 – January 2024</p>
-                        <p class="position">Lecturer, Faculty of Electrical and Computer Engineering</p>
+                        <p class="duration">August 2017 – November 2023</p>
+                        <p class="position"><strong>Lecturer, Faculty of Electrical and Computer Engineering</strong></p>
+                        <p style="margin-top: 10px;">Developed and delivered curriculum for electrical and computer engineering programs over 6+ years.</p>
                     </div>
                 </div>
             </div>
@@ -115,11 +419,11 @@
                         <span class="label">Adama Science and Technology University</span>
                     </div>
                     <ol class="text-justify" type="1">
-                        <li>Embedded System and Control Robotics</li>
-                        <li>Mobile Computing and Application</li>
-                        <li>Introduction to Computing (Python)</li>
-                        <li>Fundamentals of Programming (C++)</li>
-                        <li>System Programming</li>
+                        <li><strong>Embedded System and Control Robotics</strong> - Hardware/software integration for robotic systems</li>
+                        <li><strong>Mobile Computing and Application</strong> - Mobile app development and platform architectures</li>
+                        <li><strong>Introduction to Computing (Python)</strong> - Fundamentals of programming using Python</li>
+                        <li><strong>Fundamentals of Programming (C++)</strong> - Core programming concepts and OOP</li>
+                        <li><strong>System Programming</strong> - Low-level programming and system interfaces</li>
                     </ol>
                 </div>
                 
@@ -133,16 +437,16 @@
                         <span class="label">Arba Minch University</span>
                     </div>
                     <ol class="text-justify" type="1">
-                        <li>Algorithm Analysis and Design</li>
-                        <li>Digital Forensics & Cyber Crime</li>
-                        <li>Computational Methods</li>
-                        <li>Data Structures and Algorithm</li>
-                        <li>Microcomputer and Interfacing</li>
-                        <li>Computer Programming (C++)</li>
-                        <li>Software Engineering</li>
-                        <li>Programming Language</li>
-                        <li>Advanced Computer Networks</li>
-                        <li>Introduction to Computing (C/C++)</li>
+                        <li><strong>Algorithm Analysis and Design</strong> - Complexity analysis and algorithm design</li>
+                        <li><strong>Digital Forensics & Cyber Crime</strong> - Cybersecurity and forensic techniques</li>
+                        <li><strong>Computational Methods</strong> - Numerical methods and scientific computing</li>
+                        <li><strong>Data Structures and Algorithm</strong> - Advanced data structures and algorithms</li>
+                        <li><strong>Microcomputer and Interfacing</strong> - Microprocessor systems and interfaces</li>
+                        <li><strong>Computer Programming (C++)</strong> - Object-oriented programming concepts</li>
+                        <li><strong>Software Engineering</strong> - Software development lifecycle and methodologies</li>
+                        <li><strong>Programming Language</strong> - Language paradigms and concepts</li>
+                        <li><strong>Advanced Computer Networks</strong> - Network protocols and architectures</li>
+                        <li><strong>Introduction to Computing (C/C++)</strong> - Foundational computing concepts</li>
                     </ol>
                 </div>
                 
@@ -153,11 +457,11 @@
                     </div>
                     <h4>Teaching Philosophy & Approach</h4>
                     <ul class="teaching-approach">
-                        <li><strong>Practical Application:</strong> Emphasizing hands-on projects and real-world applications</li>
-                        <li><strong>Industry Relevance:</strong> Aligning course content with current industry demands</li>
-                        <li><strong>Research Integration:</strong> Incorporating latest research findings into curriculum</li>
-                        <li><strong>Student-Centered:</strong> Fostering critical thinking and problem-solving skills</li>
-                        <li><strong>Technology Integration:</strong> Utilizing modern tools and platforms in teaching</li>
+                        <li><strong>Practical Application:</strong> Emphasizing hands-on projects and real-world applications to bridge theory and practice</li>
+                        <li><strong>Industry Relevance:</strong> Aligning course content with current industry demands and emerging technologies</li>
+                        <li><strong>Research Integration:</strong> Incorporating latest research findings and methodologies into curriculum</li>
+                        <li><strong>Student-Centered:</strong> Fostering critical thinking, problem-solving skills, and independent learning</li>
+                        <li><strong>Technology Integration:</strong> Utilizing modern tools, platforms, and collaborative environments in teaching</li>
                     </ul>
                     
                     <div class="specializations">
@@ -167,19 +471,16 @@
                             <span>Machine Learning</span>
                             <span>Embedded Systems</span>
                             <span>Computer Networks</span>
-                            <span>Programming</span>
                             <span>Software Engineering</span>
+                            <span>Programming Languages</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                            <span>Cybersecurity</span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="clearfix"></div>
-                
-                <div class="arrow1">
-                    <a href="#contact" class="scroll">
-                        <img src="images/arrow1.png" alt="Scroll to contact"/>
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -197,7 +498,7 @@
                     <i class="fas fa-envelope"></i>
                     <div>
                         <h4>Email</h4>
-                        <p><a href="mailto:guutatesema@gmail.com">guutatesema@gmail.com</a></p>
+                        <p><a href="mailto:guttatesema@gmail.com">guttatesema@gmail.com</a></p>
                         <p><a href="mailto:guta.tesema@astu.edu.et">guta.tesema@astu.edu.et</a></p>
                     </div>
                 </div>
@@ -205,23 +506,26 @@
                 <div class="contact-item">
                     <i class="fas fa-university"></i>
                     <div>
-                        <h4>Current Affiliation</h4>
-                        <p>University of Messina, Italy</p>
+                        <h4>Current Academic Role</h4>
+                        <p><strong>University of Messina, Italy</strong></p>
                         <p>Postmaster Researcher in Bioengineering</p>
+                        <p>Specializing in ML/DL for rehabilitation robotics</p>
                     </div>
                 </div>
             </div>
             
             <div class="social-icon">
                 <a href="https://www.facebook.com/profile.php?id=100067683007178" aria-label="Facebook"><i class="icon2"></i></a>
-                <a href="mailto:guutatesema@gmail.com" aria-label="Email"><i class="icon3"></i></a>
+                <a href="mailto:guttatesema@gmail.com" aria-label="Email"><i class="icon3"></i></a>
                 <a href="https://www.youtube.com/@guutaatesema" aria-label="YouTube"><i class="icon4"></i></a>
-                <a href="https://orcid.org/0000-0003-1071-2557" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                <a href="https://orcid.org/0000-0003-1071-2557" target="_blank" aria-label="ORCID"><i class="icon6"></i></a>
+                <a href="https://www.linkedin.com/in/guta-tesema-163a66177/" target="_blank" aria-label="LinkedIn"><i class="icon7"></i></a>
             </div>
             
             <div class="footer-bottom">
                 <p>&copy; <script>document.write(new Date().getFullYear())</script> Guta Tesema Tufa. All rights reserved.</p>
                 <p class="orcid-id">ORCID: <a href="https://orcid.org/0000-0003-1071-2557" target="_blank">0000-0003-1071-2557</a></p>
+                <p style="font-size: 14px; color: #aaa; margin-top: 10px;">Researcher | University of Messina</p>
             </div>
             
             <script type="text/javascript">
