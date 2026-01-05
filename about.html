@@ -20,7 +20,19 @@
 </script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8236544565113650" crossorigin="anonymous"></script>
 <style>
-    /* Clean styling that won't conflict */
+    /* FIXED HEADER - Override the problematic CSS from style.css */
+    .header {
+        background: #2c3e50 !important;
+        min-height: auto !important;
+        padding: 15px 0 !important;
+        background-image: none !important;
+    }
+    
+    .header-top {
+        padding-top: 0 !important;
+    }
+    
+    /* Keep all other styles the same */
     .hero-section {
         background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
         color: white;
@@ -85,13 +97,6 @@
         margin-bottom: 30px;
         font-size: 28px;
         color: #2c3e50;
-    }
-    
-    /* Fixed header */
-    .header {
-        background: #2c3e50 !important;
-        min-height: auto !important;
-        padding: 15px 0 !important;
     }
     
     /* Consistent spacing */
