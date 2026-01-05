@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Guta Tesema Tufa CV, Academic CV, Researcher CV, Computer Engineer CV, University Lecturer CV" />
+<meta name="keywords" content="Guta Tesema Tufa CV, Academic CV, Researcher CV, Computer Engineer CV, University Lecturer CV, AI Researcher, Machine Learning, Deep Learning, Biomedical Engineering" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	    
@@ -146,6 +146,31 @@
         display: block;
         object-fit: cover;
     }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .contact-item {
+        background: rgba(255,255,255,0.1);
+        padding: 8px 15px;
+        border-radius: 20px;
+        font-size: 14px;
+    }
+    .certification-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .certification-item {
+        background: #f8f9fa;
+        padding: 12px;
+        border-radius: 5px;
+        border-left: 3px solid #a6ce39;
+    }
 </style>
 </head>
 <body>
@@ -181,11 +206,19 @@
     <div class="container">
         <img src="images/pic-9.jpg" alt="Guta Tesema Tufa" class="profile-img">
         <h1 class="profile-name">Guta Tesema Tufa</h1>
-        <h2 class="profile-title">Postmaster Researcher & Lecturer</h2>
-        <p>University of Messina | Adama Science and Technology University</p>
+        <h2 class="profile-title">Researcher | University of Messina</h2>
+        <p>Specializing in Machine Learning for Biomedical Signal Processing</p>
         <a href="https://orcid.org/0000-0003-1071-2557" target="_blank" class="profile-badge">
             ORCID: 0000-0003-1071-2557
         </a>
+        
+        <div class="contact-info">
+            <div class="contact-item">📧 guttatesema@gmail.com</div>
+            <div class="contact-item">📱 (+39) 3398577203</div>
+            <div class="contact-item">📍 Messina, Italy</div>
+            <div class="contact-item">🎂 29/12/1993</div>
+            <div class="contact-item">🇪🇹 Ethiopian</div>
+        </div>
     </div>
 </div>
 
@@ -198,12 +231,58 @@
                 <h3>Professional Summary</h3>
             </div>
             <div class="cv-content">
-                <p>I'm a lecturer at Adama Science and Technology University and a Postmaster Researcher at the University of Messina, Italy. I received my Master of Science in Computer Engineering from Addis Ababa University and my undergraduate degree at Arba Minch University in Electrical and Computer Engineering with concentration in Computer Engineering.</p>
-                <p>I am currently a lecturer at the School of Electrical Engineering and Computing where I continue to teach and do research in the field of Computer Science and Engineering.</p>
+                <p>I am a dedicated researcher at the University of Messina, Italy, specializing in the development of advanced machine learning models for controlling upper limb movements through surface electromyographic signals.</p>
+                <p>I hold a Master of Science in Computer Engineering from Addis Ababa University, and my undergraduate degree in Electrical and Computer Engineering, with a focus on Computer Engineering, was earned at Arba Minch University in Ethiopia.</p>
+                <p>Currently, I am working on a cutting-edge research grant titled "Development of Machine Learning Models for Controlling Upper Limb Movements Using Surface Electromyographic Signals." This project blends my deep passion for both machine learning and biomedical engineering to create solutions with real-world implications for rehabilitation.</p>
+                <p>With a strong academic background and a deep commitment to advancing the fields of computer science and engineering, I am constantly striving to push the boundaries of innovation and contribute to meaningful technological advancements.</p>
             </div>
         </div>
 
-        <!-- Education Section -->
+        <!-- Work Experience -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">💼</div>
+                <h3>Work Experience</h3>
+            </div>
+            <div class="cv-content">
+                <div class="cv-item">
+                    <div class="cv-date">01/02/2025 – Current</div>
+                    <div class="cv-title">Researcher – University of Messina, Messina ME, Italy</div>
+                    <div class="cv-description">
+                        Building machine learning (ML) and deep learning (DL) models for upper limb movement control using surface electromyographic (sEMG) signals.
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">17/11/2023 – 01/02/2025</div>
+                    <div class="cv-title">Lecturer – Adama Science and Technology University, Adama, Ethiopia</div>
+                    <div class="cv-description">
+                        <strong>Responsibilities:</strong>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>Contributed to the development and delivery of computer science and engineering courses</li>
+                            <li>Engaged in research activities, including publishing papers in reputable journals and conferences</li>
+                            <li>Mentored and supervised undergraduate students in their research projects</li>
+                            <li>Participated in departmental meetings and initiatives to enhance academic programs</li>
+                            <li>Taught courses: Fundamentals of Programming, Introduction to Computing, System Programming, Mobile Computing and Applications, and Embedded Systems and Robotics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cv-item">
+                    <div class="cv-date">08/08/2017 – 17/11/2023</div>
+                    <div class="cv-title">Lecturer – Arba Minch University, Arba Minch, Ethiopia</div>
+                    <div class="cv-description">
+                        <strong>Responsibilities:</strong>
+                        <ul style="margin: 10px 0; padding-left: 20px;">
+                            <li>Taught various undergraduate courses related to electrical and computer engineering</li>
+                            <li>Conducted research in AI and deep learning, NLP, and health monitoring systems</li>
+                            <li>Provided academic guidance and mentorship to students</li>
+                            <li>Collaborated with colleagues on research projects and grant proposals</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
         <div class="cv-section">
             <div class="cv-header">
                 <div class="cv-icon">🎓</div>
@@ -211,117 +290,134 @@
             </div>
             <div class="cv-content">
                 <div class="cv-item">
-                    <div class="cv-date">2022</div>
-                    <div class="cv-title">M.Sc. in Computer Engineering - Addis Ababa University</div>
+                    <div class="cv-date">19/09/2019 – 27/12/2022</div>
+                    <div class="cv-title">Master of Science in Computer Engineering – Addis Ababa University, Ethiopia</div>
                     <div class="cv-description">Thesis: "Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays"</div>
                 </div>
                 <div class="cv-item">
-                    <div class="cv-date">2022</div>
-                    <div class="cv-title">Higher Diploma as a Professional Instructor of Higher Institution - Arba Minch University</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2017</div>
-                    <div class="cv-title">B.Sc. in Electrical Engineering (Computer Stream) - Arba Minch University</div>
+                    <div class="cv-date">15/08/2013 – 06/07/2017</div>
+                    <div class="cv-title">Bachelor of Science in Electrical and Computer Engineering – Arba Minch University, Ethiopia</div>
+                    <div class="cv-description">Specialization in Computer Engineering</div>
                 </div>
             </div>
         </div>
 
-        <!-- Awards & Certifications -->
+        <!-- Certifications -->
         <div class="cv-section">
             <div class="cv-header">
                 <div class="cv-icon">🏆</div>
-                <h3>Awards and Certifications</h3>
+                <h3>Professional Certifications</h3>
             </div>
             <div class="cv-content">
-                <div class="cv-item">
-                    <div class="cv-date">2021</div>
-                    <div class="cv-title">Nvidia Deep Learning Institute</div>
-                    <div class="cv-description">Certificate of competency in "Getting Started With Deepstream for Video Analytics on Jetson NANO"</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2021</div>
-                    <div class="cv-title">Nvidia Deep Learning Institute</div>
-                    <div class="cv-description">Certificate of competency in "Getting Started With AI on Jetson NANO"</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2018</div>
-                    <div class="cv-title">Cisco Networking Academy</div>
-                    <div class="cv-description">
-                        Multiple certifications from Arba Minch University:
-                        <ul style="margin: 10px 0; padding-left: 20px;">
-                            <li>CCNA R&S Introduction to Network</li>
-                            <li>CCNA R&S Scaling Network</li>
-                            <li>Routing and Switching Essentials</li>
-                            <li>CCNA R&S Connectivity</li>
-                        </ul>
+                <div class="certification-grid">
+                    <div class="certification-item">
+                        <strong>IBM Data Science Professional Certificate</strong><br>
+                        IBM via Coursera
                     </div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2018</div>
-                    <div class="cv-title">Advanced Solar Training (AST)</div>
-                    <div class="cv-description">AMiT/Arba Minch University (AMU), Ethiopia, ISAAC Institute | University of Applied Science Southern Switzerland (SUPSI) Switzerland and University of Applied Science and Art Lucern (HSLU) Switzerland</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-date">2017</div>
-                    <div class="cv-title">Instruction Skill Training</div>
-                    <div class="cv-description">Arba Minch University</div>
+                    <div class="certification-item">
+                        <strong>Machine Learning with Python</strong><br>
+                        IBM via Coursera
+                    </div>
+                    <div class="certification-item">
+                        <strong>Introduction to Cloud Computing</strong><br>
+                        IBM via Coursera
+                    </div>
+                    <div class="certification-item">
+                        <strong>Data Science Methodology</strong><br>
+                        IBM via Coursera
+                    </div>
+                    <div class="certification-item">
+                        <strong>Python for Data Science, AI & Development</strong><br>
+                        IBM via Coursera
+                    </div>
+                    <div class="certification-item">
+                        <strong>Data Analysis with Python</strong><br>
+                        IBM via Coursera
+                    </div>
+                    <div class="certification-item">
+                        <strong>Machine Learning</strong><br>
+                        Stanford University (09/01/2025 – 20/06/2025)
+                    </div>
+                    <div class="certification-item">
+                        <strong>Getting Started with AI on Jetson NANO</strong><br>
+                        NVIDIA Deep Learning Institute
+                    </div>
+                    <div class="certification-item">
+                        <strong>Getting Started with Deep Stream for Video Analytics on Jetson NANO</strong><br>
+                        NVIDIA Deep Learning Institute
+                    </div>
+                    <div class="certification-item">
+                        <strong>Cisco CCNA Certifications</strong><br>
+                        Arba Minch University (Multiple, 2018)
+                    </div>
+                    <div class="certification-item">
+                        <strong>Instruction Skill Training</strong><br>
+                        Arba Minch University (2017)
+                    </div>
+                    <div class="certification-item">
+                        <strong>AWS for Beginners</strong><br>
+                        Great Learning
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Skills Section -->
+        <!-- Skills -->
         <div class="cv-section">
             <div class="cv-header">
-                <div class="cv-icon">💼</div>
+                <div class="cv-icon">🔧</div>
                 <h3>Skills</h3>
             </div>
             <div class="cv-content">
                 <div class="cv-item">
-                    <div class="cv-title">Technical Skills</div>
+                    <div class="cv-title">Programming Languages</div>
                     <div class="skill-tags">
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">OpenCL</span>
+                        <span class="skill-tag">C++</span>
                         <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">HTML-5</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">LaTeX</span>
-                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Shell Scripting</span>
                     </div>
                 </div>
                 <div class="cv-item">
-                    <div class="cv-title">Operating Systems</div>
-                    <div class="cv-description">Linux, Windows</div>
+                    <div class="cv-title">Technical Skills</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Biomedical Signal Processing</span>
+                        <span class="skill-tag">FPGA Programming</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                    </div>
                 </div>
                 <div class="cv-item">
-                    <div class="cv-title">Software Proficiency</div>
-                    <div class="cv-description">Microsoft Office Suite (Excel, Word, PowerPoint), Hardware & Software Management</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-title">Professional Skills</div>
-                    <div class="cv-description">Excellent communication skills, ability to work effectively in fast-paced and multi-tasking environments</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-title">Personal Interests</div>
-                    <div class="cv-description">Reading scientific papers and books, watching sports contests and scientific programs, admiring nature</div>
-                </div>
-                <div class="cv-item">
-                    <div class="cv-title">Personal Attributes</div>
-                    <div class="cv-description">Free of any habits or crimes, professional work ethic</div>
+                    <div class="cv-title">Software & Tools</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Office Suite</span>
+                        <span class="skill-tag">Microsoft Outlook</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">IBM Cloud</span>
+                        <span class="skill-tag">Coursera Platform</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Languages Section -->
+        <!-- Languages -->
         <div class="cv-section">
             <div class="cv-header">
                 <div class="cv-icon">🌐</div>
-                <h3>Languages</h3>
+                <h3>Language Skills</h3>
             </div>
             <div class="cv-content">
                 <div class="cv-item">
-                    <div class="cv-title">Afaan Oromo <span class="language-level">Fluent</span></div>
+                    <div class="cv-title">Afaan Oromo <span class="language-level">Native</span></div>
                 </div>
                 <div class="cv-item">
                     <div class="cv-title">English <span class="language-level">Proficient</span></div>
@@ -332,34 +428,84 @@
             </div>
         </div>
 
-        <!-- Publications Section -->
+        <!-- Publications -->
         <div class="cv-section">
             <div class="cv-header">
                 <div class="cv-icon">📚</div>
-                <h3>Publications</h3>
+                <h3>Publications & Research</h3>
             </div>
             <div class="cv-content">
                 <div class="publication-item">
-                    <div class="cv-title">1. Sputum smears quality inspection using an ensemble feature extraction approach</div>
+                    <div class="cv-title">2023 - Sputum smears quality inspection using an ensemble feature extraction approach</div>
                     <div class="cv-description">
-                        Kiflie A, Tesema Tufa G and Salau AO (2023)<br>
-                        <em>Front. Public Health 10:1032467</em><br>
+                        <strong>Authors:</strong> Kiflie A, Tesema Tufa G and Salau AO<br>
+                        <strong>Journal:</strong> Frontiers in Public Health<br>
                         DOI: 10.3389/fpubh.2022.1032467
                     </div>
                 </div>
                 <div class="publication-item">
-                    <div class="cv-title">2. Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays</div>
+                    <div class="cv-title">2022 - Acceleration of Deep Neural Network Training Using Field Programmable Gate Arrays</div>
                     <div class="cv-description">
-                        Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan (2022)<br>
-                        <em>Computational Intelligence and Neuroscience 2022</em>
+                        <strong>Authors:</strong> Tufa, Guta Tesema, Fitsum Assamnew Andargie, and Anchit Bijalwan<br>
+                        <strong>Journal:</strong> Computational Intelligence and Neuroscience 2022
                     </div>
                 </div>
                 <div class="publication-item">
-                    <div class="cv-title">3. Design and implementation of heart beat monitoring using PIC microcontroller</div>
+                    <div class="cv-title">2017 - Design and implementation of heart beat monitoring using PIC microcontroller</div>
                     <div class="cv-description">
-                        Biniyam, Ato, Ato Guta Tesema, Ato Akrem Mohammed, Narayana Swamy Ramaiah, and Ato Eyassu Dilla (2017)<br>
-                        <em>2017 International Conference On Smart Technologies For Smart Nation (SmartTechCon)</em>, pp. 784-787. IEEE, 2017.
+                        <strong>Authors:</strong> Biniyam, Ato, Ato Guta Tesema, Ato Akrem Mohammed, Narayana Swamy Ramaiah, and Ato Eyassu Dilla<br>
+                        <strong>Conference:</strong> 2017 International Conference On Smart Technologies For Smart Nation (SmartTechCon), IEEE
                     </div>
+                </div>
+                
+                <h4 style="margin-top: 20px; color: #2c3e50;">Papers Under Review</h4>
+                
+                <div class="publication-item">
+                    <div class="cv-title">Examine the Impact of Normalizing and Using Amharic Informal Opinionated Features in Sentiment Analysis</div>
+                    <div class="cv-description">
+                        <strong>Journal:</strong> Journal of Engineering<br>
+                        <strong>Submitted:</strong> 13 July 2025<br>
+                        <strong>Status:</strong> Pending Approval<br>
+                        <strong>Keywords:</strong> Amharic, Sentiment analysis, Informal, CNN-Bi-LSTM
+                    </div>
+                </div>
+                
+                <div class="publication-item">
+                    <div class="cv-title">Amharic Hateful Memes Detection on Social Media Using Deep Learning</div>
+                    <div class="cv-description">
+                        <strong>Book Chapter:</strong> Artificial Neural Networks - Recent Advances and Application<br>
+                        <strong>Publisher:</strong> IntechOpen<br>
+                        <strong>Submitted:</strong> 3.07.2025<br>
+                        <strong>Status:</strong> Under Review
+                    </div>
+                </div>
+                
+                <div class="publication-item">
+                    <div class="cv-title">Optimizing FPGA Resources with Convolutional Neural Network Strategies</div>
+                    <div class="cv-description">
+                        <strong>Journal:</strong> International Journal of Information Technology<br>
+                        <strong>Submitted:</strong> 03 March 2025<br>
+                        <strong>Status:</strong> Under Review
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hobbies & Interests -->
+        <div class="cv-section">
+            <div class="cv-header">
+                <div class="cv-icon">🎯</div>
+                <h3>Hobbies & Interests</h3>
+            </div>
+            <div class="cv-content">
+                <p>I'm free from any bad habits or crimes. I enjoy:</p>
+                <div class="skill-tags">
+                    <span class="skill-tag">Reading scientific papers</span>
+                    <span class="skill-tag">Reading books</span>
+                    <span class="skill-tag">Reading newspapers</span>
+                    <span class="skill-tag">Watching sports contests</span>
+                    <span class="skill-tag">Watching scientific programs</span>
+                    <span class="skill-tag">Admiring nature</span>
                 </div>
             </div>
         </div>
@@ -369,15 +515,15 @@
 <div class="footer-section" id="contact">
     <div class="container"> 
         <div class="contact-header">
-            <h3>Contact Me</h3>
-            <p style="text-align: center; margin: 20px 0;">Available for academic collaborations and research opportunities</p>
+            <h3>Contact & Connect</h3>
+            <p style="text-align: center; margin: 20px 0;">Available for research collaborations, academic discussions, and professional opportunities</p>
         </div>
         <div class="social-icon">
             <a href="https://www.facebook.com/profile.php?id=100067683007178" title="Facebook"><i class="icon2"></i></a>
-            <a href="mailto:guutaatesema@gmail.com" title="Email"><i class="icon3"></i></a>
+            <a href="mailto:guttatesema@gmail.com" title="Email"><i class="icon3"></i></a>
             <a href="https://www.youtube.com/@guutaatesema" title="YouTube"><i class="icon4"></i></a>
             <a href="https://orcid.org/0000-0003-1071-2557" target="_blank" title="ORCID Profile"><i class="icon6"></i></a>
-            <a href="#" title="LinkedIn"><i class="icon7"></i></a>
+            <a href="https://www.linkedin.com/in/guta-tesema-163a66177/" target="_blank" title="LinkedIn"><i class="icon7"></i></a>
             <a href="#" title="Google Scholar"><i class="icon8"></i></a>
         </div>
         
@@ -388,6 +534,9 @@
             </p>
             <p style="margin-top: 10px; font-size: 14px; color: #666;">
                 Guta Tesema Tufa • Academic Curriculum Vitae
+            </p>
+            <p style="margin-top: 5px; font-size: 12px; color: #888;">
+                Passport: EP7787234 | Phone: (+39) 3398577203 | Email: guttatesema@gmail.com
             </p>
             <p style="margin-top: 5px; font-size: 12px; color: #888;">
                 ORCID: 0000-0003-1071-2557 | Last Updated: <script>document.write(new Date().toLocaleDateString())</script>
